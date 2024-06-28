@@ -10,16 +10,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-staged": "lint-staged",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
     "test": "pnpm lint && pnpm prettier:check"
-  },
-  "git": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
@@ -42,7 +35,6 @@
     "eslint-config-next": "^14.2.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-unicorn": "^52.0.0",
-    "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",

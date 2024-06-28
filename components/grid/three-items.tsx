@@ -8,6 +8,7 @@ function ThreeItemGridItem({
   size,
   priority
 }: {
+  // type script type annotation. Good to apply it in every function.
   item: Product;
   size: 'full' | 'half';
   priority?: boolean;

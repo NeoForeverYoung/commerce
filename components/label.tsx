@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Price from './price';
 
+// const Label = ... is a valid way to define a React component. In modern JavaScript (ES6+), it’s common to define React components using arrow functions or function declarations.
 const Label = ({
   title,
   amount,

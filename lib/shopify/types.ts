@@ -61,6 +61,7 @@ export type Page = {
   updatedAt: string;
 };
 
+// creates a new type identical to ShopifyProduct but without the variants and images properties.
 export type Product = Omit<ShopifyProduct, 'variants' | 'images'> & {
   variants: ProductVariant[];
   images: Image[];

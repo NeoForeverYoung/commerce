@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 
+// This is a React component named Price.
 const Price = ({
   amount,
   className,
@@ -11,6 +12,7 @@ const Price = ({
   currencyCode: string;
   currencyCodeClassName?: string;
 } & React.ComponentProps<'p'>) => (
+  // It is used to format a numeric amount as a string representing a currency. It's a little bit complex but just go around it.
   <p suppressHydrationWarning={true} className={className}>
     {`${new Intl.NumberFormat(undefined, {
       style: 'currency',
